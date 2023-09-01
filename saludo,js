@@ -1,0 +1,13 @@
+// Obtener el elemento de botón por su ID
+const botonSaludar = document.getElementById("botonSaludar");
+
+// Función que se ejecuta cuando se hace clic en el botón
+function saludar() {
+    const nombre = prompt("¿Cuál es tu nombre?");
+    if (nombre) {
+        alert(`Hola, ${nombre}! Bienvenido.`);
+    }
+}
+
+// Agregar un evento de clic al botón que llama a la función 'saludar'
+botonSaludar.addEventListener("click", saludar);
